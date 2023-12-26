@@ -1,0 +1,91 @@
+:root {
+  --title: #802a2a;
+  --bg: #e6d8c5;
+  --black: #212529;
+  scroll-padding-top: 120px;
+}
+
+body {
+  background: var(--bg);
+}
+
+
+
+/* ------------------------ section_c ------------------------ */
+
+#section_c {
+  background: url(../images/relax/台灣地圖.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.day_box {
+  display: flex;
+  overflow: hidden;
+}
+
+.tours_title {
+  padding: 1rem 0;
+}
+
+.tours_title h4 {
+  width: 10em;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-right: 2rem;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  background: linear-gradient(#fff, #0270a7, #008dd2);
+  box-shadow: inset 3px 0 2px rgba(4, 87, 130, 0.9), inset -3px 0 2px rgba(4, 87, 130, 0.9);
+}
+
+.tours_carousel {
+  width: 80%;
+}
+
+.tours_img {
+  overflow: hidden;
+}
+
+.tours_carousel a img {
+  transition: .5s;
+}
+
+.tours_carousel a:hover img {
+  transform: scale(1.2);
+  filter: brightness(60%);
+  transition: .5s;
+}
+
+@media (max-width:1199px) {
+  /* #section_c {
+    background: none;
+  } */
+  .day_box {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  .tours_title h4 {
+    width: auto;
+    display: inline-block;
+    margin-right: 0;
+  }
+  .tours_carousel {
+    width: 100%;
+  }
+}
+
+@media (max-width:500px) {
+  .tours_title h4 {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width:425px) {
+  .tours_title {
+    text-align: center;
+  }
+}
+
+
