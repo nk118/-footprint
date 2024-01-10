@@ -21,6 +21,8 @@ body {
 
 .day_box {
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -45,6 +47,7 @@ body {
 }
 
 .tours_img {
+  
   overflow: hidden;
 }
 
